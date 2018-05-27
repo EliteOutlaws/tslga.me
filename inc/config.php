@@ -1,5 +1,5 @@
 <?php
-$link = mysqli_connect("localhost","user","pass","dbname");
+$link = mysqli_connect("localhost","root","","tslgame");
 
 if (mysqli_connect_errno())
 {
