@@ -1,4 +1,61 @@
+@import "simple-grid.min.css";
+@import "colors";
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $bgColor;
+
+    .box {
+        background: $boxColor;
+        box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
+        padding: .5em;
+
+        h1 {
+            font-size: 1em;
+            text-transform: uppercase;
+        }
+
+        .divider {
+            border-bottom: 1px solid #CCC;
+            opacity: .3;
+            margin: 5px 0;
+        }
+
+        .files {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .fileName {
+                font-size: 1em;
+            }
+            .fileDate {
+                font-size: .9em;
+                color: #A0A0A0;
+                line-height: 1.8em;
+            }
+        }
+    }
+
+    .copy {
+        font-size: .7em;
+        text-transform: uppercase;
+        text-align: center;
+        display: block;
+
+        .fa {
+            font-size: .9em;
+            color: #d62d20;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            font-weight: 600;
+        }
+    }
 }
